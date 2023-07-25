@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/gygabor/cli-oclif.git",
   "author": "gyorgyg <gyorgyg@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "oclif": "^3.10.0"
+  },
+  "devDependencies": {
+    "@kinsta/eslint-config": "^3.6.2"
+  }
 }

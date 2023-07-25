@@ -1,0 +1,8 @@
+{
+  "name": "cli-oclif",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gygabor/cli-oclif.git",
+  "author": "gyorgyg <gyorgyg@gmail.com>",
+  "license": "MIT"
+}

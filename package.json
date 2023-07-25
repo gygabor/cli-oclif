@@ -5,11 +5,15 @@
   "repository": "https://github.com/gygabor/cli-oclif.git",
   "author": "gyorgyg <gyorgyg@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "generate:command": "oclif generate command"
+  },
   "dependencies": {
     "oclif": "^3.10.0"
   },
   "devDependencies": {
     "@kinsta/eslint-config": "^3.6.2",
+    "eslint": "^8.45.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }

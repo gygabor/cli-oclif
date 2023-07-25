@@ -1,4 +1,5 @@
 import { Args, Command, Flags } from '@oclif/core'
+import { select } from '@inquirer/prompts'
 
 export default class HelloWorld extends Command {
   static description = 'describe the command here'
@@ -19,6 +20,21 @@ export default class HelloWorld extends Command {
   public async run(): Promise<void> {
     const { args, flags } = await this.parse(HelloWorld)
 
+    const answer = await select({
+      message: 'Are you sure?',
+      choices: [
+        {
+          name: 'yes',
+          value: 'yes',
+        },
+        {
+          name: 'no',
+          value: 'no',
+        },
+      ],
+    })
+
+    console.log(answer)
     const name = flags.name ?? 'world'
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`)
